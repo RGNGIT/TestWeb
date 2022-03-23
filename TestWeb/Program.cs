@@ -11,7 +11,7 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-app.Use(MW);
+app.Run(MW);
 
 async Task MW(HttpContext context)
 {
